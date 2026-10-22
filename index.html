@@ -3,50 +3,178 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Overtime Desk | The front desk that works your overtime</title>
-<meta name="description" content="Overtime Desk: AI call answering, missed-call text-back and follow-up for HVAC and home-service businesses around Louisville, KY. Coming soon.">
+<title>Louisville HVAC Missed-Call Text Back &amp; AI Receptionist | Overtime Desk</title><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="description" content="For Louisville &amp; southern Indiana HVAC companies: missed-call text-back, after-hours AI receptionist and fast lead follow-up. Get a free Lead-Leak Check.">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://overtimedesk.com/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Overtime Desk">
-<meta property="og:description" content="The front desk that works your overtime. Coming soon.">
-<meta property="og:url" content="https://overtimedesk.com/">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#14213D">
 <style>
-:root{--amber:#F59E0B;--navy:#14213D;--navy2:#1C2D52;--orange:#F97316;--orange-d:#C2410C;--paper:#FAF7F2;--muted:#AEB7C7;
---head:"Arial Narrow","Roboto Condensed","Helvetica Neue",Arial,sans-serif;--body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{margin:0;background:var(--navy);color:#fff;font:17px/1.6 var(--body);display:flex;flex-direction:column}
-main{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 24px}
-.wrap{max-width:720px;text-align:center}
-.logo{font:800 30px/1 var(--head);letter-spacing:.06em;display:inline-flex;align-items:center;gap:12px}
-.logo .ot{color:var(--amber)}
-.clock{width:30px;height:30px;border:4px solid var(--amber);border-radius:50%;position:relative;display:inline-block}
-.clock:before{content:"";position:absolute;left:10px;top:3px;width:4px;height:10px;background:#fff;border-radius:2px}
-.clock:after{content:"";position:absolute;left:10px;top:10px;width:9px;height:4px;background:#fff;border-radius:2px;transform:rotate(35deg);transform-origin:left center}
-.eyebrow{margin:40px 0 0;font:700 14px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
-h1{font:800 56px/1.06 var(--head);letter-spacing:-.5px;margin:14px 0 18px}
-p.sub{font-size:20px;color:#D9DEE8;margin:0 auto 32px;max-width:600px}
-.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;padding:14px 24px;border-radius:6px}
-.btn:hover,.btn:focus{background:var(--orange-d)}
-.btn:focus{outline:3px solid var(--amber);outline-offset:3px}
-footer{background:#0E1730;color:var(--muted);text-align:center;font-size:14px;padding:18px 24px}
-footer a{color:#fff}
-@media (max-width:560px){h1{font-size:40px}p.sub{font-size:18px}.logo{font-size:24px}}
+:root{--amber:#F59E0B;--navy:#14213D;--navy2:#1C2D52;--orange:#F97316;--orange-d:#C2410C;--paper:#FAF7F2;--card:#FFFFFF;--ink:#1F2937;--muted:#5B6472;--line:#E5E0D6;
+--head:"Arial Narrow","Roboto Condensed","Helvetica Neue",Arial,sans-serif;--body:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--body)}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{background:var(--navy);color:#fff}nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font:800 22px/1 var(--head);letter-spacing:.06em;display:flex;align-items:center;gap:9px}.logo .ot{color:var(--amber)}
+.clock{width:22px;height:22px;border:3px solid var(--amber);border-radius:50%;position:relative;display:inline-block}.clock:before{content:"";position:absolute;left:8px;top:3px;width:3px;height:8px;background:#fff;border-radius:2px}.clock:after{content:"";position:absolute;left:8px;top:8px;width:7px;height:3px;background:#fff;border-radius:2px;transform:rotate(35deg);transform-origin:left center}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:15px}nav ul a{text-decoration:none;opacity:.9}
+.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;padding:14px 22px;border-radius:6px;border:0}
+.btn:hover{background:var(--orange-d)}.btn.sm{padding:10px 16px;font-size:15px}
+.btn.ghost{background:transparent;border:2px solid #fff;color:#fff}.btn.ghost.dark{border-color:var(--navy);color:var(--navy)}
+.hero{background:linear-gradient(180deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center}
+.eyebrow{font:700 14px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--orange)}
+h1,h2,h3{font-family:var(--head);line-height:1.08;margin:0 0 16px}h1{font-size:62px;letter-spacing:-.5px;margin-top:14px}
+h2{font-size:42px;color:var(--navy)}h3{font-size:22px;color:var(--navy)}
+.hero p.sub{font-size:20px;color:#D9DEE8;max-width:620px}.ctas{display:flex;flex-wrap:wrap;gap:14px;margin:28px 0 12px}
+.micro{font-size:14px;color:#AEB7C7}
+.report{background:var(--card);color:var(--ink);border-radius:10px;padding:22px;box-shadow:0 20px 40px rgba(0,0,0,.35);border-top:6px solid var(--orange)}
+.report .tag{font:700 11px/1 var(--body);letter-spacing:.1em;color:#991B1B;background:#FEE2E2;padding:5px 7px;border-radius:3px}
+.report h4{font:800 20px/1.2 var(--head);margin:12px 0 4px;color:var(--navy)}.report .row{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:9px 0;font-size:15px}
+.report .row b{font-family:ui-monospace,Menlo,Consolas,monospace}.report .bad{color:#B91C1C}.report .note{font-size:12px;color:var(--muted);margin-top:10px}
+section{padding:80px 0}section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.lead{font-size:19px;color:var(--muted);max-width:760px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px}.card p{margin:0;color:var(--muted)}
+ul.leaks{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px}
+ul.leaks li{padding-left:30px;position:relative}ul.leaks li:before{content:"";position:absolute;left:0;top:7px;width:14px;height:14px;border-radius:50%;background:var(--orange)}
+.cite{font-size:14px;color:var(--muted);border-left:3px solid var(--orange);padding-left:12px;margin-top:28px}
+.step .n{font:800 46px/1 var(--head);color:var(--orange)}
+.mod .badge{font-size:12px;font-weight:700;color:var(--navy);background:#E8EDF7;border-radius:3px;padding:3px 7px;margin-left:6px;vertical-align:middle}
+table.price{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:16px}
+.price th,.price td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:center}.price td:first-child,.price th:first-child{text-align:left}
+.price thead th{background:var(--navy);color:#fff;font:800 22px/1.2 var(--head)}.price thead th small{display:block;font:700 15px var(--body);color:#FED7AA;margin-top:4px}
+.price .yes{color:#15803D;font-weight:800}.price .no{color:#9CA3AF}.fine{font-size:14px;color:var(--muted);margin-top:14px}
+.guar{border:2px dashed var(--navy)}
+.demo{background:var(--navy);color:#fff}.demo h2{color:#fff}.demo .grid2 .card{background:var(--navy2);border-color:#2B3E68}.demo .card p{color:#D9DEE8}.demo h3{color:#fff}
+details{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 20px;margin-bottom:10px}summary{font-weight:800;cursor:pointer;color:var(--navy)}details p{margin:10px 0 0;color:var(--muted)}
+.final{text-align:center}.final .lead{margin:0 auto}
+footer{background:#0E1730;color:#AEB7C7;padding:48px 0 32px;font-size:14px}footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+footer a{color:#fff}footer .sms{margin-top:26px;padding:14px 16px;border:1px solid #2B3E68;border-radius:8px;color:#D9DEE8}
+footer .legal{margin-top:22px;border-top:1px solid #22325A;padding-top:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 </style>
 </head>
 <body>
-<main>
-  <div class="wrap">
-    <div class="logo" role="img" aria-label="Overtime Desk"><span class="clock" aria-hidden="true"></span><span class="ot">OVERTIME</span>&nbsp;DESK</div>
-    <p class="eyebrow">Coming soon</p>
+<nav><div class="wrap">
+  <div class="logo"><span class="clock" aria-hidden="true"></span><span class="ot">OVERTIME</span> DESK</div>
+  <ul><li><a href="#how">How it works</a></li><li><a href="#setup">What we set up</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul>
+  <a class="btn sm" href="mailto:hello@overtimedesk.com?subject=Lead-Leak%20Check">Get my free Lead-Leak Check</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow">Overtime Desk &middot; For residential HVAC companies in the Louisville area &amp; southern Indiana</div>
     <h1>The front desk that works your overtime.</h1>
-    <p class="sub">AI call answering, missed-call text-back and follow-up for HVAC and home-service businesses around Louisville, KY.</p>
-    <a class="btn" href="mailto:hello@overtimedesk.com">hello@overtimedesk.com</a>
+    <p class="sub">No-heat calls don&rsquo;t leave voicemails. Overtime Desk texts back missed calls, covers after hours, and follows up on every web lead, so the 9&nbsp;p.m. call books with you, not the next company on Google. It starts with a free Lead-Leak Check of your own phone line and web form.</p>
+    <div class="ctas">
+      <a class="btn" href="mailto:hello@overtimedesk.com?subject=Lead-Leak%20Check">Get my free Lead-Leak Check</a>
+      <a class="btn ghost" href="mailto:hello@overtimedesk.com?subject=Lead-Leak%20Check">Talk to Bo</a>
+    </div>
+    <div class="micro">The Lead-Leak Check is free, with 15 minutes to go over it. Email hello@overtimedesk.com to get started. Serving HVAC shops within ~75 miles of Louisville: Lexington, Elizabethtown, New Albany, Jeffersonville, Clarksville.</div>
   </div>
-</main>
-<footer>&copy; 2026 Overtime Desk &middot; <a href="mailto:hello@overtimedesk.com">hello@overtimedesk.com</a></footer>
+  <aside class="report" aria-label="Sample Lead-Leak Check">
+    <span class="tag">SAMPLE &middot; DUMMY DATA</span>
+    <h4>Lead-Leak Check time card: Example HVAC Co.</h4>
+    <div class="row"><span>After-hours test call (9:12 PM)</span><b class="bad">Voicemail</b></div>
+    <div class="row"><span>First reply to that call</span><b class="bad">Next morning</b></div>
+    <div class="row"><span>Web form submitted (7:40 PM)</span><b>Logged</b></div>
+    <div class="row"><span>First reply to the form</span><b class="bad">Next day</b></div>
+    <div class="row"><span>Review request after a job</span><b>Not sent</b></div>
+    <div class="note">Illustration only. Not a real company or a real result. Your report uses your own timestamps.</div>
+  </aside>
+</div></header>
+
+<section><div class="wrap">
+  <h2>You&rsquo;re on a rooftop unit. The phone&rsquo;s ringing in the truck.</h2>
+  <p class="lead">Every HVAC owner knows the drill. You can&rsquo;t answer, and urgent callers don&rsquo;t wait.</p>
+  <ul class="leaks">
+    <li><b>Peak season swamps the phone.</b> The first muggy July heat wave or January cold snap brings more calls than anyone can pick up.</li>
+    <li><b>Urgent callers don&rsquo;t wait.</b> No heat, no AC: they call the next company on the list.</li>
+    <li><b>Web forms sit until tonight.</b> By the time someone replies, the homeowner has booked.</li>
+    <li><b>After-hours calls go to voicemail.</b> Nobody owns the callback until morning.</li>
+    <li><b>Reviews and tune-ups slip.</b> You meant to ask every customer. It&rsquo;s been a long season.</li>
+  </ul>
+  <p class="cite">Companies that tried to contact online leads within an hour were nearly seven times as likely to qualify them as companies that waited longer. <a href="https://hbr.org/2011/03/the-short-life-of-online-sales-leads">Harvard Business Review, 2011</a></p>
+</div></section>
+
+<section class="alt" id="how"><div class="wrap">
+  <h2>Three steps. Your numbers first.</h2>
+  <div class="grid3">
+    <div class="card step"><div class="n">1</div><h3>We check for leaks</h3><p>With your OK, we call your line after hours and fill out your web form like a homeowner would, then time how long it takes to hear back. You get a one-page report with real timestamps.</p></div>
+    <div class="card step"><div class="n">2</div><h3>We plug the biggest one first</h3><p>Usually missed-call text-back and after-hours coverage. We forward calls from your existing number (no porting) and write every message in your voice. Emergencies go to your on-call tech. Live in 14 days, or your setup fee back.</p></div>
+    <div class="card step"><div class="n">3</div><h3>We show you the numbers</h3><p>A one-page monthly report: calls caught, response times, bookings, and reviews requested and received. If it isn&rsquo;t earning its keep, you&rsquo;ll see that too.</p></div>
+  </div>
+</div></section>
+
+<section id="setup"><div class="wrap">
+  <h2>Start with what&rsquo;s leaking. Add the rest when it pays.</h2>
+  <div class="grid3">
+    <div class="card mod"><h3>Missed-call text-back</h3><p>Unanswered callers get a text from your company within about a minute. It captures what they need and how urgent it is, and alerts your team. Every text names your business and says &ldquo;Reply STOP to opt out.&rdquo;</p></div>
+    <div class="card mod"><h3>AI receptionist <span class="badge">Growth &amp; Pro</span></h3><p>Says up front that it&rsquo;s an automated assistant, answers common questions, books into your calendar, and sends emergencies (no heat, no AC, gas smell, leak) straight to a human.</p></div>
+    <div class="card mod"><h3>Speed-to-lead</h3><p>Web forms and Google/Meta ad leads get a reply within minutes by text or email, day or night. The AI only calls back people who asked to be called.</p></div>
+    <div class="card mod"><h3>Review requests</h3><p>After each completed job, <b>every customer gets the same link to your Google review page</b>, with no screening first (no review gating). The same message can also offer a direct line to the owner.</p></div>
+    <div class="card mod"><h3>Reactivation <span class="badge">Growth &amp; Pro</span></h3><p>Seasonal tune-up and maintenance-plan reminders, sent only to past customers with the right consent on file. Everyone else hears from you by email.</p></div>
+    <div class="card mod"><h3>Monthly report</h3><p>One page with leads captured, response times, bookings, and reviews requested and received. Plain numbers.</p></div>
+  </div>
+</div></section>
+
+<section class="alt" id="pricing"><div class="wrap">
+  <h2>Straight pricing.</h2>
+  <p class="lead" style="margin-top:-6px">Month-to-month after a 3-month first term. One-time setup from $750.</p>
+  <table class="price">
+    <thead><tr><th></th><th>Starter<small>$497/mo</small></th><th>Growth<small>$997/mo</small></th><th>Pro<small>$1,497/mo</small></th></tr></thead>
+    <tbody>
+      <tr><td>Missed-call text-back</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td></tr>
+      <tr><td>Speed-to-lead (text/email)</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td></tr>
+      <tr><td>Review requests</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td></tr>
+      <tr><td>Monthly report</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td></tr>
+      <tr><td>AI receptionist (voice + text) with booking</td><td class="no">&mdash;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td></tr>
+      <tr><td>Reactivation campaigns</td><td class="no">&mdash;</td><td>1 per quarter</td><td>Monthly</td></tr>
+      <tr><td>Multi-location / multi-calendar</td><td class="no">&mdash;</td><td class="no">&mdash;</td><td class="yes">&#10003;</td></tr>
+      <tr><td>Ad-lead integrations</td><td class="no">&mdash;</td><td class="no">&mdash;</td><td class="yes">&#10003;</td></tr>
+      <tr><td>Priority changes + monthly strategy call</td><td class="no">&mdash;</td><td class="no">&mdash;</td><td class="yes">&#10003;</td></tr>
+    </tbody>
+  </table>
+  <p class="fine">One-time setup from $750, with the exact fee depending on plan and setup. Each plan includes a fair-use allowance of texts and voice minutes, and usage beyond it is billed at cost plus a small markup. First term is 3 months, then month-to-month. Carrier registration fees are passed through at cost. We don&rsquo;t guarantee revenue.</p>
+  <div class="card guar" style="margin-top:56px">
+    <h2 style="margin-bottom:8px">Live in 14 days, or your setup fee back.</h2>
+    <p style="font-size:18px;color:var(--ink)">We put our setup on the line, not your revenue. If your Overtime Desk isn&rsquo;t live within 14 days, we refund your setup fee.</p>
+    <p class="fine"><b>What &ldquo;live&rdquo; means:</b> calls forward from your existing number (no porting), and lead follow-up and review requests go out by email. On Growth and Pro, the AI receptionist is answering too. Texting is submitted for carrier approval and switches on as soon as carriers approve. That approval (typically 5 business days to 3 weeks) doesn&rsquo;t count against the 14 days. The clock starts once we have everything from intake, and pauses while we&rsquo;re waiting on you for access or info.</p>
+  </div>
+</div></section>
+
+<section class="demo" id="leak-check"><div class="wrap">
+  <h2>Get your free Lead-Leak Check.</h2>
+  <div class="grid2">
+    <div class="card"><h3>Email us your business name and website</h3><p>Send them to hello@overtimedesk.com. With your OK, we&rsquo;ll test your phone line and web form like a homeowner would, then send you a one-page report with real timestamps.</p><p style="margin-top:18px"><a class="btn" href="mailto:hello@overtimedesk.com?subject=Lead-Leak%20Check">Get my free Lead-Leak Check</a></p></div>
+    <div class="card"><h3>Or talk to a person</h3><p>Fifteen minutes with Bo, by phone or video. We&rsquo;ll go over your Lead-Leak Check, or set one up for you. Email us and we&rsquo;ll find a time.</p><p style="margin-top:18px"><a class="btn" href="mailto:hello@overtimedesk.com?subject=Talk%20to%20Bo">Talk to Bo</a></p></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>Straight answers</h2>
+  <details open><summary>Will my customers know they&rsquo;re talking to AI?</summary><p>Yes. Our AI receptionist says it&rsquo;s an automated assistant at the start of the call, and it never claims to be a person. If a caller wants a human, or the call is an emergency, it hands off to your team.</p></details>
+  <details open><summary>Are calls recorded?</summary><p>If recording is on, the greeting says so at the start of every call.</p></details>
+  <details open><summary>Is it legal to text people who called me?</summary><p>Missed-call text-back is a reply to someone who just called you. The first text names your business, explains why you&rsquo;re texting, and includes &ldquo;Reply STOP to opt out.&rdquo; We also post a short texting notice next to your phone number and in your voicemail greeting, and we register your business with the carriers (A2P 10DLC) before any texts go out.</p></details>
+  <details open><summary>What about texting my old customer list?</summary><p>Marketing texts need the right prior consent, usually written consent. We check how each contact&rsquo;s consent was collected before any campaign. Contacts without clear consent get email instead.</p></details>
+  <details open><summary>What happens when someone texts STOP or HELP?</summary><p>STOP unsubscribes them right away, with one confirmation text and nothing after unless they text START. HELP gets them your contact info. Non-urgent texts are kept to reasonable hours.</p></details>
+  <details><summary>Do you make cold calls or send cold texts for me?</summary><p>No. No cold texts and no automated or AI cold calls. The AI only calls back people who asked to be called.</p></details>
+  <details open><summary>How long until it&rsquo;s live?</summary><p>14 days, or your setup fee back. <b>What &ldquo;live&rdquo; means:</b> calls forward from your existing number (no porting), and lead follow-up and review requests go out by email. On Growth and Pro, the AI receptionist is answering too. Texting is submitted for carrier approval and switches on as soon as carriers approve. That approval (typically 5 business days to 3 weeks) doesn&rsquo;t count against the 14 days. The clock starts once we have everything from intake, and pauses while we&rsquo;re waiting on you for access or info.</p></details>
+  <details><summary>Do I need a new number or new software?</summary><p>No new number. We forward calls from your existing number rather than porting it, and connect to your calendar and field-service software where they allow it.</p></details>
+  <details><summary>What area do you serve?</summary><p>Residential HVAC companies within about 75 miles of Louisville, including Lexington, Elizabethtown, Shelbyville, Bardstown and southern Indiana (New Albany, Jeffersonville, Clarksville).</p></details>
+  <details><summary>Is there a contract? Who owns my data?</summary><p>The first term is 3 months, then it&rsquo;s month-to-month. Who owns your data? You do. Your customer data stays yours, and we&rsquo;ll export it for you if you leave.</p></details>
+</div></section>
+
+<section class="alt final" id="final"><div class="wrap">
+  <h2>Put your overtime on our desk.</h2>
+  <p class="lead">We&rsquo;ll test your phone line and web form, show you the timestamps, and tell you what we&rsquo;d fix first. If nothing needs fixing, we&rsquo;ll say so.</p>
+  <div class="ctas" style="justify-content:center"><a class="btn" href="mailto:hello@overtimedesk.com?subject=Lead-Leak%20Check">Get my free Lead-Leak Check</a><a class="btn ghost dark" href="mailto:hello@overtimedesk.com?subject=Talk%20to%20Bo">Talk to Bo</a></div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div><div class="logo" style="color:#fff"><span class="clock" aria-hidden="true"></span><span class="ot">OVERTIME</span> DESK</div><p>The front desk that works your overtime. Missed-call text-back, AI receptionist and lead follow-up for residential HVAC companies within about 75 miles of Louisville, KY, including southern Indiana.</p><p>Our AI receptionist identifies itself as an automated assistant.</p></div>
+    <div><b style="color:#fff">Contact</b><p><a href="mailto:hello@overtimedesk.com">hello@overtimedesk.com</a><br>6844 Bardstown Rd, Unit 2547, Louisville, KY 40291<br>overtimedesk.com</p></div>
+    <div><b style="color:#fff">Legal</b><p><a href="/sms-terms/">SMS Terms</a><br><a href="/privacy/">Privacy Policy</a></p></div>
+  </div>
+  <div class="legal"><span>&copy; 2026 Jason Underwood d/b/a Overtime Desk</span><span>No mobile information is shared with third parties for marketing.</span></div>
+</div></footer>
 </body>
 </html>
